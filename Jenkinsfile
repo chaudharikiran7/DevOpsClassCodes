@@ -1,9 +1,9 @@
 pipeline {
-   agent none
-    stages {
-        stage('build') {
+   agent { docker { image 'phpweb' } }
+   stages {
+       stage('build') {
             steps {
-                sh 'php --version'
+               sh 'php --version'
             }
         }
     }
