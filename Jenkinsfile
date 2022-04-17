@@ -1,5 +1,5 @@
 pipeline {
-    agent { slave { image 'phpweb' } }
+    agent { slave }
     stages {
         stage('build') {
             steps {
