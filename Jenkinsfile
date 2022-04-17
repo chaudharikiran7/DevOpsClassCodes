@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'phpweb' } }
+    agent { slave { image 'phpweb' } }
     stages {
         stage('build') {
             steps {
